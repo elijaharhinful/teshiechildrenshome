@@ -705,7 +705,7 @@ p {
 .contribution .left {
   height: 200px;
   width: 30%;
-  background-image: url("/images/left-cocoa.png");
+  background-image: url("../images/left-cocoa.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -714,7 +714,7 @@ p {
 .contribution .right {
   height: 200px;
   width: 30%;
-  background-image: url("/images/right-cocoa.png");
+  background-image: url("../images/right-cocoa.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -749,7 +749,7 @@ p {
   margin: 7rem 0 0 0;
   padding-top: 4rem;
   height: 16.6rem;
-  background-image: url('/images/footer-background.png');
+  background-image: url('../images/footer-background.png');
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -10,6 +10,7 @@
     />
     <link href="assets/slick/slick.css" rel="stylesheet" />
     <link href="assets/slick/slick-theme.css" rel="stylesheet" />
+    <script src="js/scrollreveal-4.0.0.min.js"></script>
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
   </head>
@@ -104,10 +105,11 @@
       />
     </section>
     <section class="section caring">
-      <div class="woman-and-baby">
+      <div class="woman-and-baby slideRight">
         <img src="images/woman_holding_child.png" alt="woman_holding_child" />
       </div>
-      <div class="section__title">
+      <div class="sun fadeIn"><img src="./images/sun.png" alt="" /></div>
+      <div class="section__title slideLeft">
         <h2>
           Caring<br />
           for the<br />
@@ -122,7 +124,7 @@
     </section>
     <section class="section dedication">
       <div class="text">
-        <p>
+        <p class="fadeIn">
           At Teshie Children’s Home, we are dedicated to uplifting orphans,
           abandoned children, teenage mothers, and the elderly in Teshie, Ghana
           — providing care, support, and education to help them rise above
@@ -131,20 +133,36 @@
       </div>
     </section>
     <section class="section about">
-      <div class="left">
+      <div class="left slideRight">
         <img src="images/flower_with_cloud.png" alt="image flower" />
+      </div>
+      <div class="middle">
+        <div class="fans">
+          <div class="pink-fan fadeInDelay2">
+            <img class="to-spin" src="./images/fan-03.png" alt="" />
+            <img src="./images/pinkstand.png" alt="" />
+          </div>
+          <div class="purple-fan fadeIn">
+            <img class="to-spin" src="./images/fan-04.png" alt="" />
+            <img src="./images/stand.png" alt="" />
+          </div>
+          <div class="green-fan fadeInDelay1">
+            <img class="to-spin" src="./images/fan-05.png" alt="" />
+            <img src="./images/stand.png" alt="" />
+          </div>
+        </div>
       </div>
       <div class="right">
         <div class="section__title">
-          <h2>About Us</h2>
+          <h2 class="slideLeft" >About Us</h2>
         </div>
         <div class="section__subtitle">
-          <h4>
+          <h4 class="fadeIn">
             Our Mission to Support <br />
             Orphans & Vulnerable Children
           </h4>
         </div>
-        <div class="text">
+        <div class="text fadeInDelay1">
           <p>
             It is an act of humanity to help the poor and needy that profoundly
             moved a good-natured couple, Mr. Kwamina Parker and Mrs. Janet
@@ -160,11 +178,12 @@
     </section>
     <section class="section stats">
       <div class="timeline">
-        <div class="one">
-          <div class="card">
-            <div class="info">
-              <h3 class="dot"></h3>
-              <img src="images/two_people.png" alt="" />
+        <div class="card">
+          <div class="info">
+            <h3 class="dot"></h3>
+            <img class="slideRight" src="images/two_people.png" alt="" />
+            <div class="text fadeIn">
+              <h2>25+ <span>years of service</span></h2>
             </div>
           </div>
         </div>
@@ -172,19 +191,46 @@
         <div class="card">
           <div class="info">
             <h3 class="dot"></h3>
-            <img src="images/students.png" alt="" />
+            <img class="slideLeft" src="images/students.png" alt="" />
+            <div class="data fadeInDelay1">
+              <div>
+                <h4>Over</h4>
+                <h2>100</h2>
+                <h4>children educated</h4>
+              </div>
+              <p>and supported through primary and secondary education</p>
+            </div>
           </div>
         </div>
+
         <div class="card">
           <div class="info">
             <h3 class="dot"></h3>
-            <img src="images/graduate.png" alt="" />
+            <img class="slideRight" src="images/graduate.png" alt="" />
+            <div class="text fadeInDelay2">
+              <h2>
+                50+
+                <span>
+                  successful <br />
+                  vocational training <br />
+                  graduates
+                  </span>
+              </h2>
+            </div>
           </div>
         </div>
+
         <div class="card">
           <div class="info">
             <h3 class="dot"></h3>
-            <img src="images/smiles.png" alt="" />
+            <img class="slideLeft" src="images/smiles.png" alt="" />
+            <div class="data fadeInDelay1">
+              <div>
+              <h4>Medical care for</h4>
+              <h2>200</h2>
+              </div>
+              <p>children and elderly individuals provided annually</p>
+            </div>
           </div>
         </div>
       </div>
@@ -194,7 +240,7 @@
     </section>
     <section class="section programs">
       <div class="green-background">
-        <h3>Our Programs</h3>
+        <h3 class="slideUp" >Our Programs</h3>
         <ul class="dropdown">
           <li class="sub-menu">
             <a href="#education"
@@ -269,7 +315,7 @@
       </div>
     </section>
     <section class="section hope">
-      <h3>
+      <h3 class="slideUp">
         Stories of Hope and <br />
         Transformation
       </h3>
@@ -442,7 +488,7 @@
       </div>
     </section>
     <section class="section ways">
-      <h3>Ways to Make a Difference</h3>
+      <h3 class="fadeIn">Ways to Make a Difference</h3>
       <div class="ways-card-container">
         <div class="ways-card">
           <div class="overlay"></div>
@@ -488,8 +534,8 @@
     <section class="section contribution">
       <div class="left"></div>
       <div class="middle">
-        <h3>Every Contribution Counts</h3>
-        <p>
+        <h3 class="slideUp">Every Contribution Counts</h3>
+        <p class="fadeIn">
           The cost is so little. The need is so<br />
           great. The reward is a shower of<br />
           blessings!

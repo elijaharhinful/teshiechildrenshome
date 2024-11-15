@@ -19,3 +19,48 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="slick-next"> </button>',
   });
 });
+
+var slideUp = {
+  distance: '200%',
+  origin: 'bottom',
+  opacity: null,
+};
+
+var slideDown = {
+  distance: '150%',
+  origin: 'top',
+  opacity: null,
+};
+
+var slideRight = {
+  distance: '180%',
+  origin: 'left',
+  opacity: 0.3,
+  delay: 400,
+};
+
+var slideLeft = {
+  distance: '180%',
+  origin: 'right',
+  opacity: 0.3,
+};
+
+var fadeIn = {
+  delay: 1000,
+};
+
+var fadeInDelay1 = {
+  delay: 1300,
+}
+
+var fadeInDelay2 = {
+  delay: 1600,
+}
+
+
+ScrollReveal().reveal('.fadeIn', fadeIn);
+ScrollReveal().reveal('.fadeInDelay1', fadeInDelay1);
+ScrollReveal().reveal('.fadeInDelay2', fadeInDelay2);
+ScrollReveal().reveal('.slideRight', slideRight);
+ScrollReveal().reveal('.slideLeft', slideLeft);
+ScrollReveal().reveal('.slideUp', slideUp);

@@ -1,0 +1,185 @@
+:root {
+  /*========== Colors ==========*/
+  --yellow-color: #ffeb55;
+  --light-green-color: #00d27a;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--h3-font-size);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--green-color);
+  color: var(--text-color-white);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  filter: invert(0);
+  transition: filter 0.3s ease;
+  box-shadow: -2px 13px 28px -10px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: -2px 13px 28px -10px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: -2px 13px 28px -10px rgba(0, 0, 0, 0.59);
+}
+
+.button:hover {
+  filter: invert(1);
+}
+
+/*==================== HEADER ====================*/
+/*======== NAV =========*/
+nav {
+  background-color: var(--lemon-green-color);
+}
+
+nav a {
+  color: var(--text-color-white);
+}
+
+nav .logo-icon {
+  background-color: var(--text-color-white);
+  margin: 0.5rem 0;
+}
+
+.nav-donate-btn {
+  background-color: var(--text-color-white);
+  color: var(--lemon-green-color);
+}
+
+.active a {
+  color: var(--pink-color);
+}
+/*==================== STORY ====================*/
+.story {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+}
+
+.story .top,
+.story .middle,
+.story .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.story .top h1 {
+  color: var(--pink-color);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.story .top .image,
+.story .middle .image,
+.story .bottom .image {
+  width: 35%;
+}
+
+.story .top .text,
+.story .middle .text,
+.story .bottom .text {
+  width: 50%;
+}
+
+/*==================== MISSION ====================*/
+.mission {
+  background-color: var(--violet-color);
+  color: var(--text-color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.mission .middle {
+  width: 50%;
+  text-align: center;
+  margin-right: 15rem;
+}
+.mission .middle p {
+  text-align: center;
+}
+.mission .middle h2 {
+  color: var(--yellow-color);
+  margin-bottom: 1rem;
+}
+.mission .right {
+  position: absolute;
+  right: 3rem;
+  top: -3rem;
+}
+
+/*==================== VISION ====================*/
+.vision {
+  background-color: var(--light-green-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 4rem;
+}
+.vision .middle {
+  width: 50%;
+  text-align: center;
+  margin-right: 15rem;
+}
+.vision .middle p {
+  text-align: center;
+}
+.vision .middle h2 {
+  color: var(--text-color-white);
+  margin-bottom: 1rem;
+}
+.vision .right {
+  position: absolute;
+  right: 3rem;
+  top: -3rem;
+}
+
+/*==================== FOOTER ====================*/
+.programs{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 4rem auto;
+}
+
+
+/*==================== FOOTER ====================*/
+.footer {
+  margin: 7rem 0 0 0;
+  padding-top: 4rem;
+  height: 16.6rem;
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer h3 {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  color: var(--text-color-white);
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */

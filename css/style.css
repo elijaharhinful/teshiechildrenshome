@@ -146,6 +146,9 @@ nav a:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
+.active a{
+  color: var(--pink-color);
+}
 
 /*==================== BANNER ====================*/
 .banner {
@@ -177,7 +180,8 @@ nav a:hover {
   padding: 4rem 5rem 4rem 3em;
   background-image: url("../images/caring-background.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -197,7 +201,11 @@ nav a:hover {
 }
 
 .sun img {
-  animation: spin 5s linear infinite;
+  animation: spin 17s linear infinite;
+}
+
+.caring .caring-text{
+  margin-right: 3rem;
 }
 
 .caring h2 {
@@ -373,6 +381,21 @@ p {
 .card {
   position: relative;
   max-width: 400px;
+}
+
+.card:nth-child(odd) .stats-icon{
+  position: absolute;
+  top: 8rem;
+}
+
+.card:nth-child(even) .stats-icon{
+  position: absolute;
+  right: 1rem;
+}
+
+.stats-icon svg{
+  height: 4rem;
+  width: 4rem;
 }
 
 /* setting padding based on even or odd */

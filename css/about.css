@@ -157,14 +157,120 @@ nav .logo-icon {
   top: -3rem;
 }
 
-/*==================== FOOTER ====================*/
-.programs{
+/*==================== PROGRAMS ====================*/
+.programs {
   display: flex;
   flex-direction: column;
   width: 70%;
   margin: 4rem auto;
 }
 
+.programs .top .section__title {
+  color: var(--violet-color);
+}
+
+.programs .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 4rem 0;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.programs .grid .programs-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 11px 27px -5px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px 11px 27px -5px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 11px 27px -5px rgba(0, 0, 0, 0.32);
+}
+
+.purple {
+  background-image: url(../images/about/violet-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.green {
+  background-image: url(../images/about/green-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pink {
+  background-image: url(../images/about/pink-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.yellow {
+  background-image: url(../images/about/yellow-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.programs .grid .programs-card .card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.programs .grid .programs-card .card-title .icon svg {
+  width: 60%;
+}
+
+.programs .grid .programs-card .card-title h3 {
+  font-size: var(--big-font-size);
+  color: var(--text-color-white);
+}
+
+.programs .grid .programs-card .card-text p {
+  color: var(--text-color-white);
+}
+
+.programs .grid .programs-card:last-child h3,
+.programs .grid .programs-card:last-child p {
+  color: black;
+}
+.programs .grid .programs-card:last-child .text{
+  width: 70%;
+}
+.programs .grid .programs-card .card-text p {
+  text-align: center;
+}
+
+/*==================== CONTRIBUTION ====================*/
+.futures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  background-image: url(../images/about/futures-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem;
+}
+
+.futures h3 {
+  font-size: var(--big-font-size);
+  margin-bottom: 1.5rem;
+  color: var(--text-color-white);
+}
+
+.futures-btn a {
+  color: var(--pink-color);
+  font-weight: 800;
+  background-color: #ffeb55;
+}
 
 /*==================== FOOTER ====================*/
 .footer {

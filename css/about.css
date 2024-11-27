@@ -242,9 +242,6 @@ nav .logo-icon {
 .programs .grid .programs-card:last-child .text{
   width: 70%;
 }
-.programs .grid .programs-card .card-text p {
-  text-align: center;
-}
 
 /*==================== CONTRIBUTION ====================*/
 .futures {

@@ -1,20 +1,19 @@
 // js for preloader
-$(window).on('load', function() {
-    // Remove the preloader
-    $('.preloader').fadeOut('slow', function() {
-        // Remove the loading class from body
-        $('body').removeClass('loading');
-        // Remove preloader from DOM after fade out
-        $(this).remove();
-    });
+$(window).on("load", function () {
+  // Remove the preloader
+  $(".preloader").fadeOut("slow", function () {
+    // Remove the loading class from body
+    $("body").removeClass("loading");
+    // Remove preloader from DOM after fade out
+    $(this).remove();
+  });
 });
 
 // Add this when the document is ready
-$(document).ready(function() {
-    // Add loading class to body
-    $('body').addClass('loading');
+$(document).ready(function () {
+  // Add loading class to body
+  $("body").addClass("loading");
 });
-
 
 // javascript for tabs
 $(".sub-menu ul").hide();
@@ -42,27 +41,27 @@ $(document).ready(function () {
 
 // animations
 var slideUp = {
-  distance: '200%',
-  origin: 'bottom',
+  distance: "200%",
+  origin: "bottom",
   opacity: null,
 };
 
 var slideDown = {
-  distance: '150%',
-  origin: 'top',
+  distance: "150%",
+  origin: "top",
   opacity: null,
 };
 
 var slideRight = {
-  distance: '180%',
-  origin: 'left',
+  distance: "180%",
+  origin: "left",
   opacity: 0.3,
   delay: 400,
 };
 
 var slideLeft = {
-  distance: '180%',
-  origin: 'right',
+  distance: "180%",
+  origin: "right",
   opacity: 0.3,
 };
 
@@ -72,51 +71,73 @@ var fadeIn = {
 
 var fadeInDelay1 = {
   delay: 1300,
-}
+};
 
 var fadeInDelay2 = {
   delay: 1600,
-}
+};
 
-
-ScrollReveal().reveal('.fadeIn', fadeIn);
-ScrollReveal().reveal('.fadeInDelay1', fadeInDelay1);
-ScrollReveal().reveal('.fadeInDelay2', fadeInDelay2);
-ScrollReveal().reveal('.slideRight', slideRight);
-ScrollReveal().reveal('.slideLeft', slideLeft);
-ScrollReveal().reveal('.slideUp', slideUp);
+ScrollReveal().reveal(".fadeIn", fadeIn);
+ScrollReveal().reveal(".fadeInDelay1", fadeInDelay1);
+ScrollReveal().reveal(".fadeInDelay2", fadeInDelay2);
+ScrollReveal().reveal(".slideRight", slideRight);
+ScrollReveal().reveal(".slideLeft", slideLeft);
+ScrollReveal().reveal(".slideUp", slideUp);
 
 // collapsable nav
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navContainer = document.querySelector('.nav-container');
-  const navLinks = document.querySelectorAll('.nav-container a');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navContainer = document.querySelector(".nav-container");
+  const navLinks = document.querySelectorAll(".nav-container a");
 
   // Toggle navigation when hamburger is clicked
-  hamburger.addEventListener('click', function() {
-      hamburger.classList.toggle('active');
-      navContainer.classList.toggle('active');
-      document.body.classList.toggle('no-scroll');
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("active");
+    navContainer.classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
   });
 
   // Close navigation when a link is clicked
-  navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-          hamburger.classList.remove('active');
-          navContainer.classList.remove('active');
-          document.body.classList.remove('no-scroll');
-      });
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navContainer.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    });
   });
 });
 
 // Optional: Close navigation when clicking outside
-document.addEventListener('click', function(event) {
-  const navContainer = document.querySelector('.nav-container');
-  const hamburger = document.querySelector('.hamburger');
-  
-  if (!navContainer.contains(event.target) && !hamburger.contains(event.target) && navContainer.classList.contains('active')) {
-      hamburger.classList.remove('active');
-      navContainer.classList.remove('active');
-      document.body.classList.remove('no-scroll');
+document.addEventListener("click", function (event) {
+  const navContainer = document.querySelector(".nav-container");
+  const hamburger = document.querySelector(".hamburger");
+
+  if (
+    !navContainer.contains(event.target) &&
+    !hamburger.contains(event.target) &&
+    navContainer.classList.contains("active")
+  ) {
+    hamburger.classList.remove("active");
+    navContainer.classList.remove("active");
+    document.body.classList.remove("no-scroll");
   }
+});
+
+//fancybx script
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Toolbar: {
+    display: {
+      left: ["infobar"],
+      middle: [
+        "zoomIn",
+        "zoomOut",
+        "toggle1to1",
+        "rotateCCW",
+        "rotateCW",
+        "flipX",
+        "flipY",
+      ],
+      right: ["slideshow", "thumbs", "close"],
+    },
+  },
 });

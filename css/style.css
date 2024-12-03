@@ -1091,6 +1091,9 @@ p {
 
 /* For extra extra large devices */
 @media screen and (min-width: 1920px) {
+  body{
+    overflow-x: hidden;
+  }
   /* Timeline Container */
   .timeline {
     width: 80%;
@@ -1290,7 +1293,7 @@ p {
 
   .info .text {
     top: 1.6rem;
-    left: 13rem;
+    left: 12.3rem;
     width: 10rem;
   }
 
@@ -1305,7 +1308,7 @@ p {
 
   .info .data {
     top: 0rem;
-    left: 12rem;
+    left: 11.3rem;
     width: 14rem;
   }
 
@@ -1321,7 +1324,7 @@ p {
   .info .data p {
     margin-left: 0.7rem;
     width: 53%;
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     font-weight: 700;
   }
 

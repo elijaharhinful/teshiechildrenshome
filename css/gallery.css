@@ -69,3 +69,12 @@
 .fancybox__container {
   background-color: rgba(0, 0, 0, 0.9); /* Darker background */
 }
+
+/*==================== MEDIA QUERIES ====================*/
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}

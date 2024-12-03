@@ -239,7 +239,7 @@ nav .logo-icon {
 .programs .grid .programs-card:last-child p {
   color: black;
 }
-.programs .grid .programs-card:last-child .text{
+.programs .grid .programs-card:last-child .text {
   width: 70%;
 }
 
@@ -285,4 +285,146 @@ nav .logo-icon {
 }
 
 /*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+  .hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--text-color-white);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  /*==================== STORY ====================*/
+  .story {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+  .story .top,
+  .story .middle,
+  .story .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .story .middle {
+    flex-direction: column-reverse;
+  }
+
+  .story .top h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .story .top .image,
+  .story .middle .image,
+  .story .bottom .image {
+    width: 80%;
+  }
+
+  .story .top .text,
+  .story .middle .text,
+  .story .bottom .text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /*==================== MISSION ====================*/
+  .mission {
+    flex-direction: column;
+    height: 35rem;
+  }
+  .mission .middle {
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+  }
+  .mission .left {
+    position: absolute;
+    top: 27rem;
+    bottom: 0;
+  }
+  .mission .right {
+    top: -3rem;
+  }
+  .mission .right svg {
+    height: 80%;
+    width: 80%;
+  }
+  /*==================== VISION ====================*/
+  .vision {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    height: 35rem;
+  }
+  .vision .middle {
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+  }
+  .vision .left {
+    position: absolute;
+    top: 27rem;
+    bottom: 0;
+  }
+  .vision .right {
+    top: -2.5rem;
+  }
+  .vision .right svg {
+    height: 80%;
+    width: 80%;
+  }
+
+  /*==================== PROGRAMS ====================*/
+  .programs {
+    width: 100%;
+  }
+  .programs .grid {
+    margin: 1rem;
+    grid-template-columns: auto;
+  }
+
+  /*==================== CONTRIBUTION ====================*/
+  .futures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-image: url(../images/about/futures-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 6rem;
+  }
+
+  .futures h3 {
+    font-size: var(--big-font-size);
+    margin-bottom: 1.5rem;
+    color: var(--text-color-white);
+  }
+
+  .futures-btn a {
+    color: var(--pink-color);
+    font-weight: 800;
+    background-color: #ffeb55;
+  }
+
+  /*==================== CONTRIBUTION ====================*/
+  .futures {
+    height: 12rem;
+    padding: 1rem;
+  }
+
+  .futures h3 {
+    text-align: center;
+  }
+}

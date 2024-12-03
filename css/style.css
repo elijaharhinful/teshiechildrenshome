@@ -1177,22 +1177,24 @@ p {
   /*==================== DEDICATION ====================*/
   .dedication {
     padding: 1.6rem;
+    background-color: var(--pink-color);
+    margin: 1rem 0 1.5rem 0;
   }
 
   .dedication .text {
     font-size: var(--smaller-font-size);
+    background: none;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
     height: 5rem;
     padding: 0rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    text-align: center;
   }
 
   .dedication p {
-    width: 75%;
+    width: 100%;
+    text-align: center;
   }
 
   /*==================== ABOUT ====================*/
@@ -1361,31 +1363,31 @@ p {
   }
   /*==================== HOPE STORIES ====================*/
   .carousel {
-    width: 60%;
+    width: 65%;
     margin-top: 3rem;
   }
   .carousel-item {
     background-color: #f8d7da;
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 1rem;
   }
   .carousel-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 0.5rem;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .carousel-content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    width: 86%;
-    margin-top: -80px;
-    margin-left: 50px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 25px;
   }
   .carousel-content {
-    max-width: 55%;
+    max-width: 60%;
     margin-right: 20px;
   }
   .carousel-content p {
@@ -1395,6 +1397,7 @@ p {
 
   .carousel-image {
     width: 100%;
+    margin-left: -1rem;
   }
 
   .slick-prev,
@@ -1405,6 +1408,14 @@ p {
     margin: 0 -2rem;
   }
   /*==================== WAYS ====================*/
+  .ways {
+    width: 99%;
+  }
+  .ways h3 {
+    color: var(--green-color);
+    font-size: var(--h3-font-size);
+    text-align: center;
+  }
   .ways-card-container {
     flex-direction: column;
     width: 65%;

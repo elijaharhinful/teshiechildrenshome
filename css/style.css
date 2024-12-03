@@ -1112,9 +1112,6 @@ p {
 
 /* For mobile devices */
 @media screen and (max-width: 768px) {
-  body{
-    overflow-x: hidden;
-  }
   .hamburger {
     display: block;
   }
@@ -1272,7 +1269,7 @@ p {
 
   /* Setting the border of top, bottom, left */
   .card:nth-child(even)::before {
-    top: -3.4px;
+    top: -3.6px;
     bottom: -3.4px;
     border-width: 10px 0 10px 10px;
   }
@@ -1293,7 +1290,7 @@ p {
 
   .info .text {
     top: 1.6rem;
-    left: 12.3rem;
+    left: 13rem;
     width: 10rem;
   }
 
@@ -1302,13 +1299,13 @@ p {
   }
 
   .info .text h2 span {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     margin-left: 0.5rem;
   }
 
   .info .data {
     top: 0rem;
-    left: 11.3rem;
+    left: 12rem;
     width: 14rem;
   }
 
@@ -1323,7 +1320,7 @@ p {
 
   .info .data p {
     margin-left: 0.7rem;
-    width: 53%;
+    width: 40%;
     font-size: var(--small-font-size);
     font-weight: 700;
   }
@@ -1431,7 +1428,7 @@ p {
   }
   /*==================== CONTRIBUTION ====================*/
   .contribution {
-    height: 300px;
+    height: 380px;
     padding: 0.2rem;
   }
 
@@ -1451,5 +1448,9 @@ p {
 
   .contribution p {
     margin: 1rem;
+  }
+  
+  body{
+    overflow-x: hidden;
   }
 }

@@ -123,7 +123,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-//fancybx script
+//fancybox script
 Fancybox.bind('[data-fancybox="gallery"]', {
   Toolbar: {
     display: {

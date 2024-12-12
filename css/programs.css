@@ -55,10 +55,10 @@ nav .logo-icon {
   z-index: 2;
   color: var(--text-color-white);
   text-align: center;
-  max-width: 80%;
+  max-width: 70%;
   height: 50%;
   padding: 0 20px;
-  margin: 7rem 3rem 0 7rem;
+  margin: 7rem 3rem 0 12rem;
 }
 
 .banner-text h1 {
@@ -205,6 +205,87 @@ nav .logo-icon {
   opacity: 1;
   transform: translate(-50%, -50%) translateX(0);
 }
+
+
+
+  /*==================== SPOTLIGHT ====================*/
+  .spotlight{
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .spotlight .left{
+    width: 30%;
+    margin-left: 10.5rem;
+  }
+  .spotlight .left .spotlight-btn{
+    background-color: var(--yellow-color);
+    color: var(--pink-color);
+    font-weight: bold;
+  }
+  .spotlight .left h3{
+    font-size: var(--h2-font-size);
+    color: var(--violet-color);
+    margin-bottom: 2rem;
+  }
+  .spotlight .left h3 span{
+    color: var(--pink-color);
+  }
+  .spotlight .right{
+    width: 70%;
+    margin: 0;
+  }
+  .spotlight .right img{
+    height: 100%;
+  }
+
+  /*==================== IMPACT ====================*/
+  .impact{
+    margin-top: 3rem;
+  }
+
+  /*==================== DIFFERENCE ====================*/
+  
+  .ways h3 {
+    color: var(--violet-color);
+  }
+
+  .ways-card:first-child{
+    background-image: url("../images/programs/teacher.png");
+  }
+
+  .ways-card:nth-child(2){
+    background-image: url("../images/programs/chips.png");
+  }
+
+  .ways-card:nth-child(3){
+    background-image: url("../images/programs/man.png");
+
+  }
+  
+  .ways-card .overlay {
+    z-index: 0;
+  }
+  
+  .ways-card p {
+    text-align: center;
+    color: var(--text-color-white);
+    z-index: 77;
+    margin-top: 3rem;
+  }
+  
+  .ways-card .button {
+    background-color: white;
+    color: var(--green-color);
+    box-shadow: none;
+    z-index: 77;
+  }
+  
+  .ways-down-btn a {
+    border-radius: 3rem;
+  }
 
 /*==================== MEDIA QUERIES ====================*/
 /* For mobile devices */

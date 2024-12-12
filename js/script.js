@@ -11,7 +11,6 @@ $(window).on("load", function () {
 
 // Add this when the document is ready
 $(document).ready(function () {
-  // Add loading class to body
   $("body").addClass("loading");
 });
 
@@ -25,6 +24,7 @@ $(".sub-menu a").click(function () {
 // carousel js
 $(document).ready(function () {
   $(".carousel").slick({
+    centerMode: true,
     dots: true,
     infinite: true,
     speed: 500,
@@ -33,9 +33,19 @@ $(document).ready(function () {
     arrows: true,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 2500,
-    prevArrow: '<button type="button" class="slick-prev"> </button>',
-    nextArrow: '<button type="button" class="slick-next"> </button>',
+    autoplaySpeed: 2000,
+  });
+});
+
+// program carousel js
+$(document).ready(function(){
+  $('.program-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false,
   });
 });
 

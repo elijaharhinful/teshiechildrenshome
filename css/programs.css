@@ -206,86 +206,162 @@ nav .logo-icon {
   transform: translate(-50%, -50%) translateX(0);
 }
 
+/*==================== SPOTLIGHT ====================*/
+.spotlight {
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.spotlight .left {
+  width: 30%;
+  margin-left: 10.5rem;
+}
+.spotlight .left .spotlight-btn {
+  background-color: var(--yellow-color);
+  color: var(--pink-color);
+  font-weight: bold;
+}
+.spotlight .left h3 {
+  font-size: var(--h2-font-size);
+  color: var(--violet-color);
+  margin-bottom: 2rem;
+}
+.spotlight .left h3 span {
+  color: var(--pink-color);
+}
+.spotlight .right {
+  width: 70%;
+  margin: 0;
+}
+.spotlight .right img {
+  height: 100%;
+}
 
+/*==================== IMPACT ====================*/
+.impact {
+  margin-top: 3rem;
+}
 
-  /*==================== SPOTLIGHT ====================*/
-  .spotlight{
-    display: flex;
-    flex-direction: row;
-    height: 30rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .spotlight .left{
-    width: 30%;
-    margin-left: 10.5rem;
-  }
-  .spotlight .left .spotlight-btn{
-    background-color: var(--yellow-color);
-    color: var(--pink-color);
-    font-weight: bold;
-  }
-  .spotlight .left h3{
-    font-size: var(--h2-font-size);
-    color: var(--violet-color);
-    margin-bottom: 2rem;
-  }
-  .spotlight .left h3 span{
-    color: var(--pink-color);
-  }
-  .spotlight .right{
-    width: 70%;
-    margin: 0;
-  }
-  .spotlight .right img{
-    height: 100%;
-  }
+.program-carousel {
+  width: 100%;
+  margin-top: 3rem;
+}
+.program-carousel-item {
+  padding: 20px;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  width: 40rem !important;
+}
+.program-carousel-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
 
-  /*==================== IMPACT ====================*/
-  .impact{
-    margin-top: 3rem;
-  }
+.pink {
+  background-color: #f8d7da;
+}
+.pink .program-carousel-icon{
+  background-color: var(--pink-color);
+}
 
-  /*==================== DIFFERENCE ====================*/
-  
-  .ways h3 {
-    color: var(--violet-color);
-  }
+.yellow{
+  background-color: #FFEB55;
+}
+.yellow .program-carousel-icon{
+  background-color: #FA7500;
+}
 
-  .ways-card:first-child{
-    background-image: url("../images/programs/teacher.png");
-  }
+.green{
+  background-color: #c2f0c2;
+}
+.green .program-carousel-icon{
+  background-color: #00A551;
+}
 
-  .ways-card:nth-child(2){
-    background-image: url("../images/programs/chips.png");
+.program-carousel-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 86%;
+  margin-top: -80px;
+  margin-left: 100px;
+}
+.program-carousel-content {
+  max-width: 55%;
+  margin-right: 20px;
+}
+.program-carousel-content p {
+  text-align: center;
+  font-size: 14px;
+}
+.program-carousel-button{
+  margin-top: 2rem;
   }
+.program-carousel-button .button{
+  background-color: white;
+  color: var(--pink-color);
+  font-weight: bold;
+}
+.program-carousel-image {
+  width: 100%;
+}
 
-  .ways-card:nth-child(3){
-    background-image: url("../images/programs/man.png");
+.program-carousel .slick-prev,
+.program-carousel .slick-next {
+  display: none;
+}
 
-  }
-  
-  .ways-card .overlay {
-    z-index: 0;
-  }
-  
-  .ways-card p {
-    text-align: center;
-    color: var(--text-color-white);
-    z-index: 77;
-    margin-top: 3rem;
-  }
-  
-  .ways-card .button {
-    background-color: white;
-    color: var(--green-color);
-    box-shadow: none;
-    z-index: 77;
-  }
-  
-  .ways-down-btn a {
-    border-radius: 3rem;
-  }
+.program-carousel .slick-dots li button:before {
+  color: black;
+}
+
+/*==================== DIFFERENCE ====================*/
+
+.ways h3 {
+  color: var(--violet-color);
+}
+
+.ways-card:first-child {
+  background-image: url("../images/programs/teacher.png");
+}
+
+.ways-card:nth-child(2) {
+  background-image: url("../images/programs/chips.png");
+}
+
+.ways-card:nth-child(3) {
+  background-image: url("../images/programs/man.png");
+}
+
+.ways-card .overlay {
+  z-index: 0;
+}
+
+.ways-card p {
+  text-align: center;
+  color: var(--text-color-white);
+  z-index: 77;
+  margin-top: 3rem;
+}
+
+.ways-card .button {
+  background-color: white;
+  color: var(--green-color);
+  box-shadow: none;
+  z-index: 77;
+}
+
+.ways-down-btn a {
+  border-radius: 3rem;
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For mobile devices */

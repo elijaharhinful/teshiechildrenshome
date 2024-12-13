@@ -24,7 +24,6 @@ $(".sub-menu a").click(function () {
 // carousel js
 $(document).ready(function () {
   $(".carousel").slick({
-    centerMode: true,
     dots: true,
     infinite: true,
     speed: 500,
@@ -33,19 +32,23 @@ $(document).ready(function () {
     arrows: true,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
+    prevArrow: '<button type="button" class="slick-prev"> </button>',
+    nextArrow: '<button type="button" class="slick-next"> </button>',
   });
 });
 
-// program carousel js
-$(document).ready(function(){
-  $('.program-carousel').slick({
+$(document).ready(function () {
+  $(".program-carousel").slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
-    adaptiveHeight: true,
+    slidesToScroll: 1,
     arrows: false,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 });
 

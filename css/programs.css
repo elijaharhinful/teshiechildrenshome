@@ -363,6 +363,15 @@ nav .logo-icon {
   border-radius: 3rem;
 }
 
+/*==================== FOOTER ====================*/
+footer nav {
+  background-color: white;
+  color: var(--lemon-green-color);
+}
+footer nav li a{
+  color: var(--lemon-green-color);
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For mobile devices */
 @media screen and (max-width: 768px) {

@@ -271,17 +271,14 @@ nav .logo-icon {
 
 /*==================== FOOTER ====================*/
 .footer {
-  margin: 7rem 0 0 0;
-  padding-top: 4rem;
-  height: 16.6rem;
-  background-image: url("../images/footer-background.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 2rem 0 0 0;
 }
-.footer h3 {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  color: var(--text-color-white);
+footer nav {
+  background-color: white;
+  color: var(--lemon-green-color);
+}
+footer nav li a{
+  color: var(--lemon-green-color);
 }
 
 /*==================== MEDIA QUERIES ====================*/

@@ -809,7 +809,10 @@ p {
 .donate {
   width: 100%;
   height: 15rem;
-  background-color: rgb(209, 209, 209);
+  background-image: url(../images/programs/child.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -1032,7 +1035,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
 }
 
 .contribution h3 {
@@ -1054,17 +1057,51 @@ p {
 /*==================== FOOTER ====================*/
 .footer {
   margin: 7rem 0 0 0;
-  padding-top: 4rem;
-  height: 16.6rem;
-  background-image: url("../images/footer-background.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 2rem 0 0 0;
 }
 .footer h3 {
-  font-size: var(--h3-font-size);
-  text-align: center;
+  font-size: var(--big-font-size);
+  text-align: left;
+  color: var(--green-color);
+  margin-bottom: 0.7rem;
+}
+.footer .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 0 6rem;
+}
+.footer .top .one, .footer .top .two,.footer .top .three{
+  max-width: 30%;
+}
+.footer .middle ul li a:hover {
+  color: var(--pink-color);
+}
+
+.footer .middle ul .active a {
+  color: var(--pink-color);
+}
+
+.footer .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.footer .copyright {
+  height: 4rem;
+  background-color: var(--dark-violet-color);
+  margin: 2.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .copyright p {
   color: var(--text-color-white);
+  text-align: center;
 }
 
 /*==================== MEDIA QUERIES ====================*/
@@ -1449,8 +1486,8 @@ p {
   .contribution p {
     margin: 1rem;
   }
-  
-  body{
+
+  body {
     overflow-x: hidden;
   }
 }

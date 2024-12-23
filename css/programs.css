@@ -267,22 +267,22 @@ nav .logo-icon {
 .pink {
   background-color: #f8d7da;
 }
-.pink .program-carousel-icon{
+.pink .program-carousel-icon {
   background-color: var(--pink-color);
 }
 
-.yellow{
-  background-color: #FFEB55;
+.yellow {
+  background-color: #ffeb55;
 }
-.yellow .program-carousel-icon{
-  background-color: #FA7500;
+.yellow .program-carousel-icon {
+  background-color: #fa7500;
 }
 
-.green{
+.green {
   background-color: #c2f0c2;
 }
-.green .program-carousel-icon{
-  background-color: #00A551;
+.green .program-carousel-icon {
+  background-color: #00a551;
 }
 
 .program-carousel-content-wrapper {
@@ -302,10 +302,10 @@ nav .logo-icon {
   text-align: center;
   font-size: 14px;
 }
-.program-carousel-button{
+.program-carousel-button {
   margin-top: 2rem;
-  }
-.program-carousel-button .button{
+}
+.program-carousel-button .button {
   background-color: white;
   color: var(--pink-color);
   font-weight: bold;
@@ -368,7 +368,7 @@ footer nav {
   background-color: white;
   color: var(--lemon-green-color);
 }
-footer nav li a{
+footer nav li a {
   color: var(--lemon-green-color);
 }
 
@@ -402,5 +402,39 @@ footer nav li a{
   /*==================== PROGRAM LIST ====================*/
   .program-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  /*==================== SPOTLIGHT ====================*/
+  .spotlight {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/programs/students.png);
+    background-position: center;
+    position: relative;
+  }
+  .spot-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+  .spotlight .left {
+    width: 80%;
+    margin-left: 0.5rem;
+    z-index: 5;
+  }
+  .spotlight .right {
+    display: none;
+  }
+  /*==================== IMPACT ====================*/
+  .impact {
+    display: none;
+  }
+  /*==================== DIFFERENCE ====================*/
+  .ways h3 {
+    padding: 1rem;
   }
 }

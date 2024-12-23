@@ -1072,7 +1072,9 @@ p {
   margin: 2rem 0;
   padding: 0 6rem;
 }
-.footer .top .one, .footer .top .two,.footer .top .three{
+.footer .top .one,
+.footer .top .two,
+.footer .top .three {
   max-width: 30%;
 }
 .footer .middle ul li a:hover {
@@ -1149,6 +1151,9 @@ p {
 
 /* For mobile devices */
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .hamburger {
     display: block;
   }
@@ -1487,7 +1492,23 @@ p {
     margin: 1rem;
   }
 
-  body {
-    overflow-x: hidden;
+  /*==================== FOOTER ====================*/
+  .footer {
+    margin: 1rem 0 0 0;
+  }
+  .footer h3 {
+    margin-bottom: 0.7rem;
+  }
+  .footer .top {
+    flex-direction: column;
+    align-items: left;
+    margin: 2rem 0;
+    padding: 0 2rem;
+  }
+  .footer .top .one,
+  .footer .top .two,
+  .footer .top .three {
+    max-width: 100%;
+    margin-top: 2rem;
   }
 }

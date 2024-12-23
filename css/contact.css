@@ -142,7 +142,6 @@ nav .logo-icon {
   margin-bottom: 1rem;
 }
 /*==================== TO DONATE ====================*/
-
 .to-donate {
   display: flex;
   flex-direction: row;
@@ -177,10 +176,7 @@ footer nav li a {
 
   /*==================== BANNER ====================*/
   .banner {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: 86vh;
+    height: 30vh;
   }
 
   .banner-text {
@@ -195,8 +191,55 @@ footer nav li a {
     margin-bottom: 2rem;
   }
 
-  /*==================== PROGRAM LIST ====================*/
-  .program-grid {
-    grid-template-columns: repeat(1, 1fr);
+  /*==================== CONTACT SECTION ====================*/
+  .contact-section {
+    max-width: 80%;
+  }
+  .contact-section .title {
+    margin: 1.5rem auto;
+  }
+  .contact-section .details {
+    flex-direction: column;
+    align-items: left;
+    margin: 0rem;
+  }
+  .contact-info {
+    padding: 0.5rem 0rem 5rem 0;
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  /*==================== WAYS TO DONATE ====================*/
+  .donation .top h3 {
+    margin-top: 4rem;
+  }
+
+  .donation .down {
+    flex-direction: column;
+    align-items: left;
+    padding: 3rem 3rem;
+  }
+  .donation .down h3 {
+    margin-bottom: 0.7rem;
+  }
+  .donation .down .right {
+    margin-top: 3rem;
+  }
+  /*==================== TO DONATE ====================*/
+  .to-donate {
+    flex-direction: column;
+    align-items: left;
+    padding: 3rem 1rem;
+  }
+  .to-donate .text {
+    max-width: 90%;
+  }
+  .to-donate .contribution-btn {
+    margin-top: 3rem;
+    max-width: 90%;
   }
 }

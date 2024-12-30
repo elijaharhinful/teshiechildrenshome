@@ -134,8 +134,9 @@ nav .logo-icon {
 
 .donation .down {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 3rem 8rem;
 }
 .donation .down h3 {
@@ -225,9 +226,6 @@ footer nav li a {
   }
   .donation .down h3 {
     margin-bottom: 0.7rem;
-  }
-  .donation .down .right {
-    margin-top: 3rem;
   }
   /*==================== TO DONATE ====================*/
   .to-donate {

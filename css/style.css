@@ -809,7 +809,7 @@ p {
 .donate {
   width: 100%;
   height: 15rem;
-  background-image: url(../images/programs/child.png);
+  background-image: url(../images/African_kids_playing.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1076,6 +1076,12 @@ p {
 .footer .top .two,
 .footer .top .three {
   max-width: 30%;
+}
+.footer .top .three .list a{
+  color: black;
+}
+.footer .top .three .list a:hover{
+  color: var(--pink-color);
 }
 .footer .middle ul li a:hover {
   color: var(--pink-color);
